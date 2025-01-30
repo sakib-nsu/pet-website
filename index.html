@@ -6,10 +6,62 @@
     <title>Pet Website</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://kit.fontawesome.com/97f67d67c0.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'btn-primary': '#FFDC26',
+            'nav-bg': '#FFF9F4',
+          }
+        }
+      }
+    }
+    </script>
+
+    <style>
+        .font-adlam {
+            font-family: "ADLaM Display", serif;
+        }
+        .font-sora {
+            font-family: "Sora", serif;
+        }
+
+    </style>
 </head>
 <body>
-    <header>
-        
+    <header class="h-[100px] bg-nav-bg">
+        <!-- Navbar -->
+        <nav class="md:container mx-auto font-sora bg-nav-bg flex justify-between">
+            <div class="flex">
+                <img src="c1-assets/logo-header.png" alt="">
+                <h3 class="flex justify-center items-center pl-3">Browse<span class="text-btn-primary">4</span>Pets</h3>
+            </div>
+            <ul class="nav-links flex items-center">
+                <li class="nav-item mx-8"><p href="#">Find a pet</p></li>
+                <li class="nav-item mx-8"><p href="#">Breeds</p></li>
+                <li class="nav-item mx-8"><p href="#">Contact us</p></li>
+            </ul>
+            <div>
+                <i class="fa-regular fa-bell mx-2"></i>
+                <i class="fa-solid fa-magnifying-glass mx-2"></i>
+                <button class="btn border border-btn-primary bg-nav-bg font-normal mx-2">Login</button>
+                <button class="btn bg-btn-primary font-normal mx-2">Register</button>
+                <label for="menu-toggle" class="menu-icon lg:hidden">&#9776;</label>
+            </div>
+        </nav>
     </header>
 </body>
 </html>
