@@ -42,26 +42,47 @@
     </style>
 </head>
 <body>
-    <header class="h-[100px] bg-nav-bg">
+    <header class="">
+
         <!-- Navbar -->
-        <nav class="md:container mx-auto font-sora bg-nav-bg flex justify-between">
-            <div class="flex">
-                <img src="c1-assets/logo-header.png" alt="">
-                <h3 class="flex justify-center items-center pl-3">Browse<span class="text-btn-primary">4</span>Pets</h3>
-            </div>
-            <ul class="nav-links flex items-center">
-                <li class="nav-item mx-8"><p href="#">Find a pet</p></li>
-                <li class="nav-item mx-8"><p href="#">Breeds</p></li>
-                <li class="nav-item mx-8"><p href="#">Contact us</p></li>
-            </ul>
-            <div>
-                <i class="fa-regular fa-bell mx-2"></i>
-                <i class="fa-solid fa-magnifying-glass mx-2"></i>
-                <button class="btn border border-btn-primary bg-nav-bg font-normal mx-2">Login</button>
-                <button class="btn bg-btn-primary font-normal mx-2">Register</button>
-                <label for="menu-toggle" class="menu-icon lg:hidden">&#9776;</label>
+
+        <nav class="h-[100px] bg-nav-bg flex justify-center items-center">
+            <div class="md:container mx-auto font-sora bg-nav-bg flex justify-between">
+                <div class="flex">
+                    <img src="c1-assets/logo-header.png" alt="">
+                    <h3 class="flex justify-center items-center pl-3">Browse<span class="text-btn-primary">4</span>Pets</h3>
+                </div>
+                <ul class="sm:hidden lg:flex items-center">
+                    <li class="nav-item mx-8"><p href="#">Find a pet</p></li>
+                    <li class="nav-item mx-8"><p href="#">Breeds</p></li>
+                    <li class="nav-item mx-8"><p href="#">Contact us</p></li>
+                </ul>
+                <div>
+                    <i class="fa-regular fa-bell mx-2"></i>
+                    <i class="fa-solid fa-magnifying-glass mx-2"></i>
+                    <button class="btn border border-btn-primary bg-nav-bg font-normal mx-2">Login</button>
+                    <button class="btn bg-btn-primary font-normal mx-2">Register</button>
+                    <label for="menu-toggle" class="menu-icon lg:hidden md:hidden">&#9776;</label>
+                </div>
             </div>
         </nav>
+
+        <!-- Banner -->
+        <div class="md:container mx-auto my-16">
+            <div class="">
+                <div>
+                    <h2 class="text-5xl md:text-5xl font-extrabold pb-6">Pamper Your Pet, <br>
+                         They Deserve <br>
+                         the Bes</h2>
+                    <p class="text-[#777777] pb-6">Discover a world of treats, toys, and essentials handpicked <br> your furry friends. Shop now and make tails wag with joy!</p>   
+                    <button class="btn bg-btn-primary font-normal">Find a pet</button>
+                </div>
+                <div>
+                    <img src="c1-assets/cat-big.png" alt="">
+    
+                </div>
+            </div>
+        </div>
     </header>
 </body>
 </html>
