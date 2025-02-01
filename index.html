@@ -46,10 +46,10 @@
 
         <!-- Navbar -->
 
-        <nav class="h-[100px] bg-nav-bg flex justify-center items-center border border-black lg:border-none pl-2">
+        <nav class="lg:h-[100px] bg-nav-bg flex justify-center items-center border border-black lg:border-none">
             <div class="md:container mx-auto font-sora bg-nav-bg flex lg:justify-between">
                 <div class="flex">
-                    <img src="c1-assets/logo-header.png" alt="" class="">
+                    <img src="c1-assets/logo-header.png" alt="" class="pl-4">
                     <h3 class="invisible lg:visible flex justify-center items-center text-2xl pl-3">Browse<span class="text-btn-primary">4</span>Pets</h3>
                 </div>
                 <ul class="invisible lg:visible lg:flex items-center">
@@ -62,7 +62,7 @@
                     <i class="fa-solid fa-magnifying-glass mx-2 invisible lg:visible"></i>
                     <button class="text-lg btn border border-btn-primary bg-nav-bg font-normal mx-2 invisible lg:visible">Login</button>
                     <button class="text-lg btn bg-btn-primary font-normal mx-2 invisible lg:visible">Register</button>
-                    <label for="menu-toggle" class="menu-icon visible text-4xl lg:invisible">&#9776;</label>
+                    <label for="menu-toggle" class="menu-icon visible text-4xl pl-20 lg:invisible">&#9776;</label>
                 </div>
             </div>
         </nav>
@@ -86,8 +86,8 @@
 
 
     <main>
-        <section class="my-24">
-            <h3 class="text-5xl font-bold text-center">Frequently Asked <span class="text-bike-primary">Questions</span></h3>
+        <section class="my-16">
+            <h3 class="text-3xl font-bold text-center">Frequently Asked <span class="text-bike-primary">Questions</span></h3>
             <div class="hero min-h-screen">
                 <div class="hero-content flex-col lg:flex-row">
                   <img src="c1-assets/cute-dog-mid.png" class="w-full rounded-lg shadow-2xl" />
@@ -130,7 +130,7 @@
 
         <!-- Browse By Categories -->
 
-        <section class="md:container mx-auto my-24 pl-2">
+        <section class="md:container mx-auto my-16 pl-2">
             <h3 class="text-3xl font-bold mb-12">Browse By Categories</h3>
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
                 <div class="bg-yellow-200 rounded-lg p-4 flex flex-col items-center justify-center h-[254px]">
@@ -368,23 +368,23 @@
                 <!-- Product Cards Container -->
                 <div class="flex gap-6 flex-col lg:flex-row">
                     <!-- Pet Grooming Mitt Card -->
-                    <div class="rounded-lg bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] w-[784px] h-[480px]">
-                        <div class="p-6 lg:flex justify-between items-center">
-                            <div class="text-black pl-20">
-                                <p class="text-4 mb-2">Under Price</p>
-                                <h3 class="text-xl font-bold mb-1">Pet Grooming Mitt</h3>
-                                <p class="text-white font-semibold mb-4">(Easy Hair Removal)</p>
-                                <div class="text-4xl font-bold">$7.99</div>
+                    <div class="rounded-lg bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] lg:w-[784px] lg:h-[480px]">
+                        <div class="p-6 lg:flex lg:justify-between items-center">
+                            <div class="text-black lg:pl-20">
+                                <p class="text-4 mb-2 invisible lg:visible">Under Price</p>
+                                <h3 class="text-2xl font-bold mb-1">Pet Grooming Mitt</h3>
+                                <p class="text-white font-semibold mb-4 invisible lg:visible">(Easy Hair Removal)</p>
+                                <div class="text-white text-4xl lg:text-black font-bold">$7.99</div>
                             </div>
-                            <img src="c1-assets/cute-dog-mid.png" alt="" class="w-[382px] h-[480px]">
+                            <img src="c1-assets/cute-dog-mid.png" alt="" class="lg:w-[382px] lg:h-[480px]">
                         </div>
                     </div>
         
                     <!-- T-Shirt for Dogs Card -->
-                    <div class="rounded-lg bg-gradient-to-r from-[#FFF9F4] to-[#F9DF8A] w-[512px]">
+                    <div class="rounded-lg bg-gradient-to-r from-[#FFF9F4] to-[#F9DF8A] lg:w-[512px]">
                         <div class="p-6 flex justify-between ">
                             <div>
-                                <h3 class="text-xl font-bold text-gray-800 mb-4">T-Shirt for Dogs</h3>
+                                <h3 class="text-2xl font-bold text-gray-800 mb-4">T-Shirt for Dogs</h3>
                                 <div class="text-4xl font-bold text-yellow-500">$7.99</div>
                             </div>
                             <img src="c1-assets/cute-pet-mid.png" alt="" class="w-[312px] h-[392px] bg-right">
