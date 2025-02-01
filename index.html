@@ -46,10 +46,10 @@
 
         <!-- Navbar -->
 
-        <nav class="h-[100px] bg-nav-bg flex justify-center items-center border border-black lg:border-none">
-            <div class="md:container mx-auto font-sora bg-nav-bg flex justify-between">
+        <nav class="h-[100px] bg-nav-bg flex justify-center items-center border border-black lg:border-none pl-2">
+            <div class="md:container mx-auto font-sora bg-nav-bg flex lg:justify-between">
                 <div class="flex">
-                    <img src="c1-assets/logo-header.png" alt="">
+                    <img src="c1-assets/logo-header.png" alt="" class="">
                     <h3 class="invisible lg:visible flex justify-center items-center text-2xl pl-3">Browse<span class="text-btn-primary">4</span>Pets</h3>
                 </div>
                 <ul class="invisible lg:visible lg:flex items-center">
@@ -68,14 +68,14 @@
         </nav>
 
         <!-- Banner -->
-        <div class="md:container mx-auto my-16 bg-cover bg-center bg-[url('c1-assets/cat-big.png')] h-[679px]">
+        <div class="md:container mx-auto my-16 bg-cover bg-center bg-[url('c1-assets/cat-big.png')] h-[679px] pl-2">
             <div class="flex flex-col">
                 <div class="">
                     <h2 class="text-5xl md:text-6xl font-extrabold pb-6">Pamper Your Pet, <br>
                          They Deserve <br>
                          the Bes</h2>
                     <p class="text-[#777777] pb-6">Discover a world of treats, toys, and essentials handpicked for <br> your furry friends. Shop now and make tails wag with joy!</p>   
-                    <button class="text-lg btn bg-btn-primary font-normal">Find a pet</button>
+                    <button class="text-lg btn bg-btn-primary font-normal animate-bounce">Find a pet</button>
                 </div>
                 <!-- <div class="">
                     <img class="" src="c1-assets/cat-big.png" alt="">
@@ -86,10 +86,51 @@
 
 
     <main>
+        <section class="my-24">
+            <h3 class="text-5xl font-bold text-center">Frequently Asked <span class="text-bike-primary">Questions</span></h3>
+            <div class="hero min-h-screen">
+                <div class="hero-content flex-col lg:flex-row">
+                  <img src="c1-assets/cute-dog-mid.png" class="w-full rounded-lg shadow-2xl" />
+                  <div class="space-y-5">
+                    <div class="collapse collapse-arrow border border-blue-100">
+                        <input type="radio" name="my-accordion-2" checked="checked" />
+                        <div class="collapse-title text-xl font-medium">What is a brief description of a pet?</div>
+                        <div class="collapse-content">
+                          <p>A pet is a domesticated animal that lives with people, but is not forced to work and is not eaten, in most instances. In most cases, a pet is kept to entertain people or for companionship. Some pets such as dogs and cats are placed in an animal shelter if there is no one willing to take care of them.
+                        </p>
+                        </div>
+                      </div>
+                      <div class="collapse collapse-arrow border border-blue-100">
+                        <input type="radio" name="my-accordion-2" />
+                        <div class="collapse-title text-xl font-medium">How do you describe pets?</div>
+                        <div class="collapse-content">
+                          <p>You can describe its color, size and shape. You can describe details like the feel of its fur or scales! You can also describe your pet's age. Age can be described in detail by days, weeks, months or years.</p>
+                        </div>
+                      </div>
+                      <div class="collapse collapse-arrow border border-blue-100">
+                        <input type="radio" name="my-accordion-2" />
+                        <div class="collapse-title text-xl font-medium">What is the explain of pet?</div>
+                        <div class="collapse-content">
+                          <p>Any domesticated or tamed animal that is kept as a companion and cared for affectionately. a person especially cherished or indulged; favorite: He was the teacher's pet.</p>
+                        </div>
+                      </div>
+                      <div class="collapse collapse-arrow border border-blue-100">
+                        <input type="radio" name="my-accordion-2" />
+                        <div class="collapse-title text-xl font-medium">What is the simple description of animals?</div>
+                        <div class="collapse-content">
+                          <p>Animals are multicellular, eukaryotic organisms in the biological kingdom Animalia (/ˌænɪˈmeɪliə/). With few exceptions, animals consume organic material, breathe oxygen, have myocytes and are able to move, can reproduce sexually, and grow from a hollow sphere of cells, the blastula, during embryonic development.</p>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+        </section>
+
 
         <!-- Browse By Categories -->
 
-        <section class="md:container mx-auto my-24">
+        <section class="md:container mx-auto my-24 pl-2">
             <h3 class="text-3xl font-bold mb-12">Browse By Categories</h3>
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
                 <div class="bg-yellow-200 rounded-lg p-4 flex flex-col items-center justify-center h-[254px]">
@@ -139,22 +180,22 @@
 
         <!-- Trending Pet Products -->
 
-        <section class="bg-nav-bg my-24">
+        <section class="bg-nav-bg lg:my-24 pl-2">
             <div class="md:container mx-auto">
                 <!-- Section Header -->
                 <h2 class="text-3xl font-bold text-gray-800 mb-6">Trending Pet Products</h2>
         
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <!-- Featured Product Card -->
-                    <div class="bg-yellow-200 rounded-xl p-6 row-span-2">
+                    <div class="bg-yellow-200 rounded-xl p-6 row-span-2 bg-[url('c1-assets/cute-pet-small.png')] bg-no-repeat lg:h-[402px] bg-right">
                         <h3 class="text-xl font-bold mb-2">T- Shirt For Dogs</h3>
                         <p class="text-gray-600 mb-4">Discover a world of treats, toys, and essentials handpicked for</p>
                         <button class="bg-white text-black font-semibold px-6 py-2 rounded-lg">
                             Shop Now
                         </button>
-                        <div class="mt-4">
+                        <!-- <div class="mt-4">
                             <img src="c1-assets/cute-pet-small.png" alt="" class="rounded-lg">
-                        </div>
+                        </div> -->
                     </div>
         
                     <!-- Grid of Pet Beds -->
@@ -319,13 +360,13 @@
 
         <!-- Everyday low Price -->
 
-        <section class="md:container mx-auto my-24">
+        <section class="md:container mx-auto my-24 pl-2">
             <div class="">
                 <!-- Section Header -->
                 <h3 class="text-3xl font-bold mb-12">Everyday low Price</h3>
         
                 <!-- Product Cards Container -->
-                <div class="flex gap-6">
+                <div class="flex gap-6 flex-col lg:flex-row">
                     <!-- Pet Grooming Mitt Card -->
                     <div class="rounded-lg bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] w-[784px] h-[480px]">
                         <div class="p-6 lg:flex justify-between items-center">
@@ -346,7 +387,7 @@
                                 <h3 class="text-xl font-bold text-gray-800 mb-4">T-Shirt for Dogs</h3>
                                 <div class="text-4xl font-bold text-yellow-500">$7.99</div>
                             </div>
-                            <img src="c1-assets/cute-pet-mid.png" alt="" class="w-[312px] h-[392px]">
+                            <img src="c1-assets/cute-pet-mid.png" alt="" class="w-[312px] h-[392px] bg-right">
                         </div>
                     </div>
                 </div>
@@ -356,7 +397,7 @@
 
     <!-- Footer -->
 
-    <footer class="bg-yellow-200">
+    <footer class="bg-yellow-200 pl-2">
         <div class="px-4 top-32">
             <div class="md:container mx-auto">
                 <div class="bg-nav-bg rounded-lg p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8">
