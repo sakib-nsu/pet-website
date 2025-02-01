@@ -68,7 +68,7 @@
         </nav>
 
         <!-- Banner -->
-        <div class="md:container mx-auto my-16 bg-cover bg-center bg-[url('c1-assets/cat-big.png')] h-[679px] pl-2">
+        <div class="md:container mx-auto my-16 bg-cover lg:bg-center bg-[url('c1-assets/cat-big.png')] bg-(length:h-[400px]) bg-(length:h-[500px]) lg:h-[679px] pl-2">
             <div class="flex flex-col">
                 <div class="">
                     <h2 class="text-5xl md:text-6xl font-extrabold pb-6">Pamper Your Pet, <br>
@@ -395,35 +395,26 @@
 
     <!-- Footer -->
 
-    <div class="px-4 lg:h-[491px]">
-        <div class="md:container mx-auto">
-            <div class="bg-nav-bg rounded-lg p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8">
-                <!-- Image Column -->
-                <div class="md:w-1/3">
-                    <img src="c1-assets/cute-pet-mid.png" alt="" class="">
-                </div>
-                
-                <!-- Content Column -->
-                <div class="md:w-2/3">
-                    <h2 class="text-3xl font-bold text-gray-800 mb-2 text-center lg:text-start">Get Pawsome News!</h2>
-                    <p class="text-gray-600 mb-6 text-center lg:text-start">Exclusive training tips, tricks, product deals and more.</p>
-                    
-                    <!-- Newsletter Form -->
-                    <div>
-                        <input type="email" placeholder="Enter email..." class="flex-grow px-4 py-3 rounded-lg w-[340px]">
-                    </div>
-                    <div class="pt-4 text-center lg:text-start lg:pt-8"><button class="btn bg-btn-primary">Subscribe</button></div>
-                </div>
+    <footer class="bg-yellow-200 mt-48 pt-24 pb-10 px-6 md:px-[140px] relative">
+        <!-- Newsletter Signup Box -->
+        <div class="absolute -top-40 left-1/2 transform -translate-x-1/2 bg-[#fef4ec] p-6 md:p-10 rounded-xl w-[90%] md:w-[700px] flex flex-col md:flex-row items-center gap-6 shadow-md">
+          <img src="c1-assets/cute-pet-mid.png" alt="" class="w-[120px] md:w-[160px]"/>
+          <div class="md:w-2/3">
+            <h2 class="text-3xl font-bold text-gray-800 mb-2 text-center lg:text-start">Get Pawsome News!</h2>
+            <p class="text-gray-600 mb-6 text-center lg:text-start">Exclusive training tips, tricks, product deals and more.</p>
+            
+            <!-- Newsletter Form -->
+            <div>
+                <input type="email" placeholder="Enter email..." class="flex-grow px-4 py-3 rounded-lg w-[340px]">
             </div>
+            <div class="pt-4 text-center lg:text-start lg:pt-8"><button class="btn bg-btn-primary">Subscribe</button></div>
         </div>
-    </div>
-
-    <footer class="bg-yellow-200 pl-2 lg:h-[656px]">
-    
-
+        </div>
+  
+        <!-- Footer Content -->
         <div class="md:container mx-auto px-3 relative">
-            <div class="flex flex-col lg:flex-row justify-between mb-24">
-                <div class="mb-8 lg:mt-[400px]">
+            <div class="flex flex-col lg:flex-row justify-between mb-24 mt-[250px] lg:mt-4">
+                <div class="mb-8 lg:mt-24">
                     <div class="flex">
                         <img src="c1-assets/logo-footer.png" alt="">
                         <h3 class="flex justify-center items-center text-xl pl-3">Browse<span class="text-btn-primary">4</span>Pets</h3>
@@ -431,7 +422,7 @@
                     <p class="footer-description">Discover a world of treats, toys, and <br> essentials handpicked for your furry <br> friends</p>
                 </div>
     
-                <div class="mb-8 lg:mt-[380px]">
+                <div class="mb-8 lg:mt-20">
                     <ul>
                         <li class="my-6 font-semibold"><a href="#">Find a pet</a></li>
                         <li class="my-6 font-semibold"><a href="#">Breeds</a></li>
@@ -439,7 +430,7 @@
                     </ul>
                 </div>
     
-                <div class="mb-8 lg:mt-[465px]">
+                <div class="mb-8 lg:mt-40">
                     <h4 class="font-semibold mb-2">Follow Us</h4>
                         <div>
                             <i class="fa-brands fa-facebook mr-3"></i>
@@ -451,6 +442,6 @@
                 </div>
             </div>
         </div>
-    </footer>
+      </footer>
 </body>
 </html>
